@@ -1,0 +1,6 @@
+{{#each hike in model}}
+  <div class="hike-index">
+    <p>{{link-to hike.name 'hikes.show' hike}}</p>
+    <p>{{hike.location}}</p>
+  </div>
+{{/each}}
