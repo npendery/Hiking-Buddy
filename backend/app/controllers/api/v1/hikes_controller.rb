@@ -1,10 +1,14 @@
-class HikesController < ApplicationController
+class API::V1::HikesController < ApplicationController
   def index
     @hikes = Hike.all
+
+    render json: @hikes
   end
 
   def show
     @hike = Hike.find(params[:id])
+
+    render json: @hike
   end
 
   def new
@@ -16,10 +20,12 @@ class HikesController < ApplicationController
 
     if @hike.save
       flash[:success] = "Hike added!"
-      redirect_to hike_path(@hike)
+      # redirect_to hike_path(@hike)
+      render json: @hike
     else
       flash[:errors] = @hike.errors.full_messages.join(". ")
-      render :new
+      # render :new
+      render json: { errors: word.errors }, status: :unprocessable_entity
     end
   end
 
