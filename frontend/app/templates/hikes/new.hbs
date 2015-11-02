@@ -1,5 +1,5 @@
 <div class="container text-center">
-  {{#each error in validationErrors}}
+  {{#each validationErrors as |error|}}
   <div class="alert alert-danger" role="alert">
     {{error}}
   </div>
