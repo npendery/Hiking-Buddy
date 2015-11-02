@@ -1,4 +1,4 @@
-class API::V1::HikesController < ApplicationController
+class Api::V1::HikesController < ApplicationController
   def index
     @hikes = Hike.all
 
@@ -16,42 +16,39 @@ class API::V1::HikesController < ApplicationController
   end
 
   def create
-    @hike = Hike.new(hike_params)
+    hike = Hike.new(hike_params)
 
-    if @hike.save
-      flash[:success] = "Hike added!"
-      # redirect_to hike_path(@hike)
-      render json: @hike
+    if hike.save
+      render json: hike,
+        status: :created,
+        location: [:api, :v1, hike]
     else
-      flash[:errors] = @hike.errors.full_messages.join(". ")
-      # render :new
-      render json: { errors: word.errors }, status: :unprocessable_entity
+      render json: { errors: hike.errors }, status: :unprocessable_entity
     end
   end
 
   def edit
-  @hike = Hike.find(params[:id])
-end
-
-def update
-  @hike = Hike.find(params[:id])
-
-  if @hike.update(hike_params)
-    flash[:success] = "Hike updated."
-    redirect_to hike_path(@hike)
-  else
-    flash[:errors] = @hike.errors.full_messages.join(". ")
-    render :edit
+    @hike = Hike.find(params[:id])
   end
-end
 
-def destroy
-  @hike = Hike.find(params[:id])
-  @hike.destroy
-  flash[:success] = "Hike deleted."
-  redirect_to hikes_path
-end
+  def update
+    hike = Hike.find(params[:id])
 
+    if hike.update(hike_params)
+      render json: hike,
+        status: :accepted,
+        location: [:api, :v1, hike]
+    else
+      render json: { errors: hike.errors }, status: :unprocessable_entity
+    end
+  end
+
+  def destroy
+    hike = Hike.find(params[:id])
+    hike.destroy
+
+    render json: hike
+  end
 
   protected
 

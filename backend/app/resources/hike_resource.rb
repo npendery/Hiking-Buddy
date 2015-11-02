@@ -1,3 +1,3 @@
 class HikeResource < JSONAPI::Resource
-  attributes :name, :location, :description, :website
+  attributes :id, :name, :location, :description, :website
 end
