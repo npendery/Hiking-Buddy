@@ -1,0 +1,1 @@
+/Users/penderyb/greenfieldChallenge/frontend/tmp/broccoli_merge_trees-input_base_path-EaTkyW5Q.tmp/2/initializers/app-version.js

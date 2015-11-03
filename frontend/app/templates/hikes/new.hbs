@@ -5,19 +5,24 @@
   </div>
   {{/each}}
   <div class="well">
-    {{#em-form model=this action="newHike"}}
+    <form {{action 'newHike' model on='submit'}}>
       <div>
-        {{textarea class="form-control" placeholder="Name" value=name}}
+        {{textarea class="form-control" placeholder="Name" value=name required=true}}
       </div>
       <div>
-        {{textarea class="form-control" placeholder="Location" value=location}}
+        {{textarea class="form-control" placeholder="Location" value=location required=true}}
       </div>
       <div>
-        {{textarea class="form-control" placeholder="Description" value=description}}
+        {{textarea class="form-control" placeholder="Description" value=description required=true}}
       </div>
       <div>
         {{textarea class="form-control" placeholder="Website" value=website}}
       </div>
-    {{/em-form}}
+      <div>
+        <input type="Submit" class="button">
+      </div>
+    </form>
   </div>
+
+  <a href="./hikes">Back to hikes</a>
 </div>

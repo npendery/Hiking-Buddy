@@ -1,0 +1,1 @@
+/Users/penderyb/greenfieldChallenge/frontend/tmp/jshinter-output_path-e7ieIYW9.tmp/helpers/resolver.jshint.js

@@ -1,0 +1,1 @@
+/Users/penderyb/greenfieldChallenge/frontend/tmp/funnel-input_base_path-wyAtLzWK.tmp/0/frontend/tests/routes/hike/new.jshint.js
