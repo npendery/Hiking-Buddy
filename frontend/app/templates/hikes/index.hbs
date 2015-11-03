@@ -1,8 +1,13 @@
+<div class="header">
+  Great Hikes Around Town!
+</div>
+
 <div>
   {{#each model as |hike|}}
     <div class="hike-index">
-      <p>{{link-to hike.name 'hikes.show' hike}}</p>
-      <p>{{hike.location}}</p>
+      <div>{{link-to hike.name 'hikes.show' hike}}</div>
+      <div>{{hike.location}}</div>
+      <div class="edit-hike">{{link-to "Edit" 'hikes.edit' hike}}</div>
     </div>
   {{/each}}
 </div>

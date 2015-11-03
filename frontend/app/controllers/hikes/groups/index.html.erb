@@ -1,0 +1,19 @@
+<div class="title">Brewing Groups</div>
+
+<div class="row groups-list">
+  <% @groups.each do |group| %>
+  <div class="medium-12 large-12 columns index-group">
+    <article class="index text-center">
+      <%= link_to group.name, group_path(group), class: "index-title" %>
+      <div class="index-description">
+        <%= group.location %>
+      </div>
+    </article>
+  </div>
+ <% end %>
+</div>
+<br>
+
+<div class="row">
+<%= link_to "Back to home", root_path, class: "back-link" %>
+</div>

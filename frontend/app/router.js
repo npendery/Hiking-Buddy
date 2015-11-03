@@ -7,8 +7,7 @@ var Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('hikes', function() {
-    this.route('edit', { path: ':hike_id' });
-    this.route('delete', { path: ':hike_id' });
+    this.route('edit', { path: ':hike_id/edit' });
     this.route('show', { path: ':hike_id' });
     this.route('new');
   });

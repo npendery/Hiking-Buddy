@@ -5,21 +5,21 @@
   </div>
   {{/each}}
   <div class="header">
-    New Hike
+    Edit {{hike.name}}
   </div>
   <div class="form">
-    <form {{action 'newHike' model on='submit'}}>
+    <form {{action 'editHike' model on='submit'}}>
       <div class="form-input">
-        {{input class="form-control" placeholder="Name" value=name required=true}}
+        {{input class="form-control" value=hike.name required=true}}
       </div>
       <div class="form-input">
-        {{input class="form-control" placeholder="Location" value=location required=true}}
+        {{input class="form-control" value=hike.location required=true}}
       </div>
       <div class="form-input">
-        {{textarea class="form-control" placeholder="Description" value=description required=true}}
+        {{textarea class="form-control" value=hike.description required=true}}
       </div>
       <div class="form-input">
-        {{input class="form-control" placeholder="Website" value=website}}
+        {{input class="form-control" value=hike.website}}
       </div>
       <div>
         <input type="Submit" class="button">

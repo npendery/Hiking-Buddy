@@ -1,16 +1,18 @@
 <div class="container text-center">
-  <div class="well">
+  <div class="hike-show">
     <h3 class="hike-title">
       {{hike.name}}
     </h3>
-    <div class="location">
+    <div class="hike-info">
+      Location:
       {{hike.location}}
     </div>
-    <div class="description">
+    <div class="hike-info">
+      Description:
       {{hike.description}}
     </div>
     {{#if hike.website}}
-    <div>
+    <div class="hike-info">
       Want more info? feel free to check out their
     <a class="website" href="{{hike.website}}">
       website
