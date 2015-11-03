@@ -1,1 +1,0 @@
-/Users/penderyb/greenfieldChallenge/frontend/tmp/funnel-input_base_path-5G2IzJ1u.tmp/0/routes/hike/show.js

@@ -1,1 +1,0 @@
-/Users/penderyb/greenfieldChallenge/frontend/tmp/funnel-input_base_path-ykC8vybr.tmp/0/

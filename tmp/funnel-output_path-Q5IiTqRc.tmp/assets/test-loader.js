@@ -1,1 +1,0 @@
-/Users/penderyb/greenfieldChallenge/frontend/tmp/funnel-input_base_path-3G7WQiC2.tmp/0/bower_components/ember-cli-test-loader/test-loader.js

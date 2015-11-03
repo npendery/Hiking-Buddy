@@ -1,1 +1,0 @@
-/Users/penderyb/greenfieldChallenge/frontend/tmp/babel-output_path-i9c72Dre.tmp/frontend/tests/helpers/start-app.js
