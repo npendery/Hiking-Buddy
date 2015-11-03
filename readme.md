@@ -18,7 +18,7 @@ rake db:create db:migrate db:seed
 rails server
 ```
 
-Then go to ```localhost:4200``` and explore the fun trails available!
+Then go to ```localhost:4200/hikes``` and explore the fun trails available!
 
 
 ### ER Diagram
