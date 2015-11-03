@@ -10,15 +10,19 @@
   <div class="form">
     <form {{action 'editHike' model on='submit'}}>
       <div class="form-input">
+        <div>Name</div>
         {{input class="form-control" value=hike.name required=true}}
       </div>
       <div class="form-input">
+        <div>Location</div>
         {{input class="form-control" value=hike.location required=true}}
       </div>
       <div class="form-input">
-        {{textarea class="form-control" value=hike.description required=true}}
+        <div>Description</div>
+        {{textarea class="form-control textarea" value=hike.description required=true}}
       </div>
       <div class="form-input">
+        <div>Website (optional)</div>
         {{input class="form-control" value=hike.website}}
       </div>
       <div>
@@ -27,5 +31,5 @@
     </form>
   </div>
 
-  <a href="./hikes">Back to hikes</a>
+  <div>{{link-to "Back to hike" 'hikes.show' hike class="show-hike"}}</div>
 </div>

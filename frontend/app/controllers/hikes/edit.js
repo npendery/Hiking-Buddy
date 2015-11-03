@@ -6,16 +6,24 @@ export default Ember.Controller.extend({
 
   actions: {
     editHike: function() {
-      const currentHike = this.currentModel;
-      const hike = this.store.find('hike', currentHike.id)
+      var hikeId = location.pathname.split('/')[2]
+      var newName = String(this.get('hike.name'))
+      var newLocation = String(this.get('hike.location'))
+      var newDescription = String(this.get('hike.description'))
+      var newWebsite = String(this.get('hike.website'))
 
-      hike.set('name', this.get('name')),
-      hike.set('location', this.get('location')),
-      hike.set('description', this.get('description')),
-      hike.set('website', this.get('website')),
-
-      hike.save().then(() => {
-        this.transitionToRoute('hikes.show', hike);
+      this.store.findRecord('hike', hikeId).then(function(hike){
+        hike.get('name');
+        hike.set('name', newName);
+        hike.get('location');
+        hike.set('location', newLocation);
+        hike.get('description');
+        hike.set('description', newDescription);
+        hike.get('website');
+        hike.set('website', newWebsite);
+        hike.save();
+      }).then(() => {
+        this.transitionToRoute('hikes.show', hikeId);
       }).catch(function(){
         this.set('validationErrors', ["Please enter in all the fields!"]);
       });

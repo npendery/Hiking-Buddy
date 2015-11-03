@@ -2,12 +2,11 @@
   Great Hikes Around Town!
 </div>
 
-<div>
+<div class="hike-container">
   {{#each model as |hike|}}
     <div class="hike-index">
-      <div>{{link-to hike.name 'hikes.show' hike}}</div>
+      <div>{{link-to hike.name 'hikes.show' hike class="index-title"}}</div>
       <div>{{hike.location}}</div>
-      <div class="edit-hike">{{link-to "Edit" 'hikes.edit' hike}}</div>
     </div>
   {{/each}}
 </div>

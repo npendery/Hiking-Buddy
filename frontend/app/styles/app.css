@@ -1,3 +1,7 @@
+.ember-application {
+  margin: 0;
+}
+
 .container {
   margin: 20px;
   text-align: center;
@@ -19,6 +23,7 @@
 .left-nav{
   color: black;
   text-decoration: none;
+  margin-left: 10px;
 }
 
 .right-nav {
@@ -29,6 +34,7 @@
   color: black;
   padding: 5px;
   padding-top: 6px;
+  margin-right: 10px;
 }
 
 .header {
@@ -45,18 +51,29 @@
   min-width: 300px;
 }
 
+.form-input {
+  margin: 15px;
+}
+
 .hike-index {
   padding: 10px;
 }
 
-.edit-hike {
-  font-size: 10px;
+.hike-container {
+  margin-left: 40px;
+  margin-bottom: 40px;
 }
 
-div .ember-view {
+.edit-hike {
   color: black;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 15px;
+}
+
+.index-title {
+  color: black;
+  text-decoration: none;
+  font-size: 25px;
 }
 
 .hike-show {
@@ -65,4 +82,8 @@ div .ember-view {
 
 .hike-info {
   padding: 5px;
+}
+
+textarea {
+  min-height: 70px;
 }
