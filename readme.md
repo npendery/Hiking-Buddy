@@ -28,6 +28,6 @@ Then go to ```localhost:4200/hikes``` and explore the fun trails available!
 
 ### Future Updates
 
-* Add Hike delete feature (for hikes that are no longer available)
+* √ Add Hike delete feature (for hikes that are no longer available)
 * Create User model (for authorizing hike edit and delete features)
 * Create Search model (for searching by area)
