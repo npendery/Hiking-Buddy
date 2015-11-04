@@ -6,11 +6,11 @@ export default Ember.Controller.extend({
 
   actions: {
     editHike: function() {
-      var hikeId = location.pathname.split('/')[2]
-      var newName = String(this.get('hike.name'))
-      var newLocation = String(this.get('hike.location'))
-      var newDescription = String(this.get('hike.description'))
-      var newWebsite = String(this.get('hike.website'))
+      var hikeId = location.pathname.split('/')[2];
+      var newName = String(this.get('hike.name'));
+      var newLocation = String(this.get('hike.location'));
+      var newDescription = String(this.get('hike.description'));
+      var newWebsite = String(this.get('hike.website'));
 
       this.store.findRecord('hike', hikeId).then(function(hike){
         hike.get('name');
@@ -25,7 +25,7 @@ export default Ember.Controller.extend({
       }).then(() => {
         this.transitionToRoute('hikes.show', hikeId);
       }).catch(function(){
-        this.set('validationErrors', ["Please enter in all the fields!"]);
+        window.alert("Name already taken!\n\nPlease use another.");
       });
     }
   }

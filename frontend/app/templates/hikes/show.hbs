@@ -21,6 +21,7 @@
     {{/if}}
   </div>
   <div>{{link-to "Edit hike" 'hikes.edit' hike class="edit-hike"}}</div>
+  {{confirm-button title="Delete hike" action="deleteHike" param=hike}}
   <br>
   <a href="./hikes">Back to hikes</a>
 </div>

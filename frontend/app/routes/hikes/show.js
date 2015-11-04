@@ -13,9 +13,8 @@ export default Ember.Route.extend({
     deleteHike() {
       const currentHike = this.currentModel;
       this.store.find('hike', currentHike.id).then((hike) => {
-        hike.destroyRecord().then(() => {
-          this.transitionTo('hikes.index');
-        });
+        hike.destroyRecord();
+        this.transitionTo('hikes.index');
       });
     },
   }

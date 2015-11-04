@@ -1,0 +1,6 @@
+{{#if isShowingConfirmation}}
+  <button {{action "confirm"}}>Confirm</button>
+  <button {{action "cancel"}}>Nevermind!</button>
+{{else}}
+  <button {{action "showConfirmation"}}>{{title}}</button>
+{{/if}}
