@@ -124,7 +124,7 @@ describe Api::V1::HikesController, type: :controller do
       }
 
       put :update, hike_attr
-      
+
       hike.reload
       expect(response.status).to eq 200
       expect(hike.name).to eq "New Name"
