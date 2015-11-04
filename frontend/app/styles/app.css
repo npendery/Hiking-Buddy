@@ -1,5 +1,6 @@
 .ember-application {
   margin: 0;
+  background-color: rgba(103, 65, 7, 0.64);
 }
 
 .container {
@@ -12,7 +13,7 @@
 }
 
 .nav {
-  background-color: rgb(149, 149, 149);
+  background-color: rgba(41, 136, 25, 0.88);
   padding: 2px;
 }
 
@@ -49,6 +50,8 @@
 
 .form-control {
   min-width: 300px;
+  background-color: rgba(41, 136, 25, 0.53);
+  border-color: black;
 }
 
 .form-input {
