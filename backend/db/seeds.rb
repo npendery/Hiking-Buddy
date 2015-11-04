@@ -1,12 +1,10 @@
 Hike.create!(name: "Mt Moosilauke",
-             description: "NH 4K, Great Views, Not So Steep Incline. Westmost NH
-                           4,000 footer. 4,800ft.",
+             description: "NH 4K, Great Views, Not So Steep Incline. Westmost NH. 4,000 footer. 4,800ft.",
              location: "Warren, NH",
              website: "http://hikethewhites.com/moosilauke.html")
 
 Hike.create!(name: "Champney Falls",
-             description: "Long cascading waterfall with many small pools -
-                           best in spring, early summer",
+             description: "Long cascading waterfall with many small pools - best in spring, early summer",
              location: "Conway, NH",
              website: "http://www.fs.usda.gov/recarea/whitemountain/recarea/?recid=80286")
 

@@ -19,7 +19,7 @@ export default Ember.Controller.extend({
       hike.save().then(() => {
         this.transitionToRoute('hikes.show', hike);
       }).catch(function(){
-        this.set('validationErrors', ["Please enter in all the fields!"]);
+        window.alert("Name already taken!\n\nPlease use another.");
       });
     }
   }
