@@ -1,6 +1,7 @@
 # Hiking Buddy
 
 ## Boston area hiking app to find recommended trails to go on.
+#### Built to practice using a Rails backend and Ember frontend
 
 ### To run locally, set up two command lines and do the following from the root directory:
 
